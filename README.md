@@ -36,6 +36,25 @@ BRUCE_CHAT_SECRET=shared-secret-with-bruce
 
 ## Embed the widget
 
+### Script only (no package required)
+
+Chat works with a single script tag. Use this when Composer/package install is not possible:
+
+```html
+<script
+  src="https://your-bruce-host/chat.js"
+  data-client="CLIENT_HASH_FROM_BRUCE"
+  data-api="https://your-bruce-host"
+  defer
+></script>
+```
+
+Bruce’s client Chat settings screen also shows a ready-to-copy snippet.
+
+Without this package, visitors can still chat. Enquiry tools that write into the host site are unavailable until the package (or equivalent capabilities API) is installed.
+
+### With this package (Laravel)
+
 In a Blade layout:
 
 ```blade
